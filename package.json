@@ -1,6 +1,6 @@
 {
   "name": "@stdlib/assert-is-node-duplex-stream-like",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "Test if a value is Node duplex stream-like.",
   "license": "Apache-2.0",
   "author": {
