@@ -1,0 +1,47 @@
+{
+  "name": "@stdlib/assert-is-node-duplex-stream-like",
+  "version": "0.0.0",
+  "description": "Test if a value is Node duplex stream-like.",
+  "license": "Apache-2.0",
+  "type": "module",
+  "main": "./mod.js",
+  "homepage": "https://stdlib.io",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/stdlib-js/assert-is-node-duplex-stream-like.git"
+  },
+  "bugs": {
+    "url": "https://github.com/stdlib-js/stdlib/issues"
+  },
+  "keywords": [
+    "stdlib",
+    "stdassert",
+    "assertion",
+    "assert",
+    "utilities",
+    "utility",
+    "utils",
+    "util",
+    "stream",
+    "readable",
+    "writable",
+    "duplex",
+    "node",
+    "nodejs",
+    "is",
+    "isstream",
+    "isreadable",
+    "iswritable",
+    "isduplex",
+    "test",
+    "check",
+    "validate",
+    "verify",
+    "isvalid",
+    "valid"
+  ],
+  "funding": {
+    "type": "patreon",
+    "url": "https://www.patreon.com/athan"
+  }
+}
