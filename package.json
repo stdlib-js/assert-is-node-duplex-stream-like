@@ -38,7 +38,8 @@
   },
   "dependencies": {
     "@stdlib/assert-is-node-readable-stream-like": "^0.0.8",
-    "@stdlib/assert-is-node-writable-stream-like": "^0.0.8"
+    "@stdlib/assert-is-node-writable-stream-like": "^0.0.8",
+    "@stdlib/error-tools-fmtprodmsg": "^0.0.2"
   },
   "devDependencies": {
     "@stdlib/assert-is-boolean": "^0.0.8",
