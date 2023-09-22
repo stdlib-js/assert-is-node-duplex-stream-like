@@ -42,7 +42,7 @@ limitations under the License.
 ## Usage
 
 ```javascript
-import isNodeDuplexStreamLike from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-node-duplex-stream-like@deno/mod.js';
+import isNodeDuplexStreamLike from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-node-duplex-stream-like@v0.1.0-deno/mod.js';
 ```
 
 #### isNodeDuplexStreamLike( value )
@@ -75,7 +75,7 @@ var bool = isNodeDuplexStreamLike( transformStream() );
 ```javascript
 var stream = require( 'stream' );
 import transformStream from 'https://cdn.jsdelivr.net/gh/stdlib-js/streams-node-transform@deno/mod.js';
-import isNodeDuplexStreamLike from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-node-duplex-stream-like@deno/mod.js';
+import isNodeDuplexStreamLike from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-node-duplex-stream-like@v0.1.0-deno/mod.js';
 
 var bool = isNodeDuplexStreamLike( new stream.Duplex() );
 // returns true
