@@ -1,7 +1,7 @@
 /**
 * @license Apache-2.0
 *
-* Copyright (c) 2018 The Stdlib Authors.
+* Copyright (c) 2023 The Stdlib Authors.
 *
 * Licensed under the Apache License, Version 2.0 (the "License");
 * you may not use this file except in compliance with the License.
@@ -16,87 +16,18 @@
 * limitations under the License.
 */
 
-/* eslint-disable no-underscore-dangle */
-
 'use strict';
 
 // MODULES //
 
-var stream = require( 'stream' );
-var EventEmitter = require( 'events' ).EventEmitter;
 var tape = require( 'tape' );
-var transformStream = require( '@stdlib/streams-node-transform' );
-var isNodeDuplexStreamLike = require( './../../dist' );
+var main = require( './../../dist' );
 
 
 // TESTS //
 
-tape( 'main export is a function', function test( t ) {
+tape( 'main export is defined', function test( t ) {
 	t.ok( true, __filename );
-	t.strictEqual( typeof isNodeDuplexStreamLike, 'function', 'main export is a function' );
-	t.end();
-});
-
-tape( 'the function returns `true` if provided a value which is Node duplex stream-like', function test( t ) {
-	var values;
-	var s;
-	var i;
-
-	function pipe() {
-		// pipe function
-	}
-
-	function read() {
-		// read function
-	}
-
-	function write() {
-		// write function
-	}
-
-	s = new EventEmitter();
-	s.pipe = pipe;
-	s._read = read;
-	s._write = write;
-	s._readableState = {};
-	s._writableState = {};
-
-	values = [
-		new stream.Transform(),
-		new stream.Duplex(),
-		transformStream(),
-		s
-	];
-
-	for ( i = 0; i < values.length; i++ ) {
-		t.strictEqual( isNodeDuplexStreamLike( values[ i ] ), true, 'returns true for value '+i );
-	}
-	t.end();
-});
-
-tape( 'the function returns `false` if  not provided a value which is Node duplex stream-like', function test( t ) {
-	var values;
-	var i;
-
-	values = [
-		'5',
-		5,
-		NaN,
-		true,
-		false,
-		null,
-		void 0,
-		[],
-		{},
-		function pipe() {},
-		new EventEmitter(),
-		new stream.Writable(),
-		new stream.Readable(),
-		new stream.Stream()
-	];
-
-	for ( i = 0; i < values.length; i++ ) {
-		t.strictEqual( isNodeDuplexStreamLike( values[ i ] ), false, 'returns false when provided '+values[ i ] );
-	}
+	t.strictEqual( main !== void 0, true, 'main export is defined' );
 	t.end();
 });
